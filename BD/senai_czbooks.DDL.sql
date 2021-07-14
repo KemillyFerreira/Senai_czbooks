@@ -63,4 +63,4 @@ CREATE TABLE livros
 );
 GO
 
---drop database senai_czbooks
+--DROP DATABASE senai_czbooks
