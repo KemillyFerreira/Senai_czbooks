@@ -3,6 +3,7 @@ using czbooks.Domains;
 using czbooks.Interfaces;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace czbooks.Repositories
 {
@@ -22,7 +23,8 @@ namespace czbooks.Repositories
 
         public Usuario Login(string email, string senha)
         {
-            throw new NotImplementedException();
+            //FirstOrDefault => comparativo, se email e senha estiverem corretos OK, se apenas um estiver errado, não da certo
+            return ctx.Usuarios.FirstOrDefault(u => u.Email == email && u.Senha == senha);
         }
     }
 }
