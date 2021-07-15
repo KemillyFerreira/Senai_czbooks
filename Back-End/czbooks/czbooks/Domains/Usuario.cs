@@ -23,6 +23,7 @@ namespace czbooks.Domains
         public string Email { get; set; }
 
         [Required(ErrorMessage = "O campo senha deve ser preenchido para cadastrar um usuário!")]
+        [StringLength(100, MinimumLength = 6, ErrorMessage = "A senha deve conter no mínimo 6 caracteres")]
         public string Senha { get; set; }
 
 

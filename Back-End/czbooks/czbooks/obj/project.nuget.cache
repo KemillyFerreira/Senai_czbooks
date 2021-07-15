@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "9qK17MveJ/9KeKlKPamrdjI8XOzhtS/sUKodC/+wGcQn+Ldw7fkrtKIASETHEmfPrUDDjzI+wuiFqsZjzHg+WA==",
+  "dgSpecHash": "MN0PDpJFKo2Ytp9XQlbjZIPbn3+iiyuNzbQCf2a8+z85RbZC70HqkY0r/BPrcNFn8C6+UE68GrnM1G251zdp9A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\50359605877\\Desktop\\senai_czbooks\\Back-End\\czbooks\\czbooks\\czbooks.csproj",
+  "projectFilePath": "C:\\Users\\50359605877\\Desktop\\Senai_czbooks\\Back-End\\czbooks\\czbooks\\czbooks.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\50359605877\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\50359605877\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\5.0.8\\microsoft.aspnetcore.authentication.jwtbearer.5.0.8.nupkg.sha512",

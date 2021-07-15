@@ -13,7 +13,7 @@ namespace czbooks.Repositories
 
         public void Atualizar(int id, Autore autorAtualizado)
         {
-            throw new NotImplementedException();
+            
         }
 
         public void Cadastrar(Autore novoAutor)
