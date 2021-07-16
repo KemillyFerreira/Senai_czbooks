@@ -23,5 +23,12 @@ namespace czbooks.Interfaces
         /// <param name="id"> id do livro que terá a atualização </param>
         /// <param name="livroAtualizado"> livro com a autalização </param>
         void Atualizar(int id, Livro livroAtualizado);
+
+        /// <summary>
+        /// lista apenas os lviros de um determinado autor
+        /// </summary>
+        /// <param name="id"> id do autor que terá os livros listados</param>
+        /// <returns> retorna os livros do autor buscado </returns>
+        List<Livro> ListarMyBooks(int id);
     }
 }

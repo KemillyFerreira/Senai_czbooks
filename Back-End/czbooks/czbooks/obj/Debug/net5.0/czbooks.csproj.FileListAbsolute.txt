@@ -65,3 +65,5 @@ C:\Users\50359605877\Desktop\senai_czbooks\Back-End\czbooks\czbooks\obj\Debug\ne
 C:\Users\50359605877\Desktop\senai_czbooks\Back-End\czbooks\czbooks\obj\Debug\net5.0\ref\czbooks.dll
 C:\Users\50359605877\Desktop\senai_czbooks\Back-End\czbooks\czbooks\obj\Debug\net5.0\czbooks.pdb
 C:\Users\50359605877\Desktop\senai_czbooks\Back-End\czbooks\czbooks\obj\Debug\net5.0\czbooks.genruntimeconfig.cache
+C:\Users\50359605877\Desktop\senai_czbooks\Back-End\czbooks\czbooks\bin\Debug\net5.0\czbooks.xml
+C:\Users\50359605877\Desktop\senai_czbooks\Back-End\czbooks\czbooks\obj\Debug\net5.0\czbooks.xml

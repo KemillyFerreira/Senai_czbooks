@@ -1,0 +1,135 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>czbooks</name>
+    </assembly>
+    <members>
+        <member name="M:czbooks.Interfaces.IAutoreRepository.Listar">
+            <summary>
+            lista toos os autores
+            </summary>
+            <returns> uma lista de autores </returns>
+        </member>
+        <member name="M:czbooks.Interfaces.IAutoreRepository.Cadastrar(czbooks.Domains.Autore)">
+            <summary>
+            cadastra um novo Autor
+            </summary>
+            <param name="novoAutor"> novoAutor será o novo objeto cadastrado </param>
+        </member>
+        <member name="M:czbooks.Interfaces.IAutoreRepository.Atualizar(System.Int32,czbooks.Domains.Autore)">
+            <summary>
+            atualiza o nome de um autor
+            </summary>
+            <param name="id"> id do autor que será atualizado </param>
+            <param name="autorAtualizado"> autor com o novo nome </param>
+        </member>
+        <member name="M:czbooks.Interfaces.IBibliotecaRepository.Listar">
+            <summary>
+            lista todas as bibliotecas
+            </summary>
+            <returns> retorna uma lista com os nomes das bibliotecas </returns>
+        </member>
+        <member name="M:czbooks.Interfaces.IBibliotecaRepository.Cadastrar(czbooks.Domains.Biblioteca)">
+            <summary>
+            cadastra uma nova biblioteca
+            </summary>
+            <param name="novaBiblioteca"> novaBiblioteca será o novo objeto cadastrado </param>
+        </member>
+        <member name="M:czbooks.Interfaces.IBibliotecaRepository.Atualizar(System.Int32,czbooks.Domains.Biblioteca)">
+            <summary>
+            atualiza a biblioteca
+            </summary>
+            <param name="id"> busca o id que terá a atualização</param>
+            <param name="bibliotecaAtualizada"> biblioteca com o novo nome </param>
+        </member>
+        <member name="M:czbooks.Interfaces.ICategoriaRepository.Listar">
+            <summary>
+            lista todas as categorias
+            </summary>
+            <returns> uma lista de categorias </returns>
+        </member>
+        <member name="M:czbooks.Interfaces.ICategoriaRepository.Cadastrar(czbooks.Domains.Categoria)">
+            <summary>
+            cadastra uma nova categoria
+            </summary>
+            <param name="novaCategoria"> novaCategoria será o novo objeto cadastrado </param>
+        </member>
+        <member name="M:czbooks.Interfaces.ICategoriaRepository.Atualizar(System.Int32,czbooks.Domains.Categoria)">
+            <summary>
+            atualiza uma categoria
+            </summary>
+            <param name="id"> busca o id que terá a atualização </param>
+            <param name="categoriaAtualizada"> categoria com a nova atualização </param>
+        </member>
+        <member name="M:czbooks.Interfaces.ILivroRepository.Listar">
+            <summary>
+            lita todos os livros
+            </summary>
+            <returns> uma lista de livros</returns>
+        </member>
+        <member name="M:czbooks.Interfaces.ILivroRepository.Cadastrar(czbooks.Domains.Livro)">
+            <summary>
+            cadastra um novo livro  
+            </summary>
+            <param name="novoLivro"> novoLivro será o novo objeto cadastrado </param>
+        </member>
+        <member name="M:czbooks.Interfaces.ILivroRepository.Atualizar(System.Int32,czbooks.Domains.Livro)">
+            <summary>
+            atualiza um livro
+            </summary>
+            <param name="id"> id do livro que terá a atualização </param>
+            <param name="livroAtualizado"> livro com a autalização </param>
+        </member>
+        <member name="M:czbooks.Interfaces.ILivroRepository.ListarMyBooks(System.Int32)">
+            <summary>
+            lista apenas os lviros de um determinado autor
+            </summary>
+            <param name="id"> id do autor que terá os livros listados</param>
+            <returns> retorna os livros do autor buscado </returns>
+        </member>
+        <member name="M:czbooks.Interfaces.IUsuarioRepository.Login(System.String,System.String)">
+            <summary>
+            validação do usuário
+            </summary>
+            <param name="email"> email do usuário </param>
+            <param name="senha"> senha do usuário </param>
+            <returns></returns>
+        </member>
+        <member name="M:czbooks.Interfaces.IUsuarioRepository.Listar">
+            <summary>
+            lista todos os usuários
+            </summary>
+            <returns> retorna uma lista de usuarios </returns>
+        </member>
+        <member name="M:czbooks.Interfaces.IUsuarioRepository.Cadastrar(czbooks.Domains.Usuario)">
+            <summary>
+            cadastra um novo usuario
+            </summary>
+            <param name="novoUsuario"> novoUsuario será o objeto atualizado </param>
+        </member>
+        <member name="M:czbooks.Repositories.LivroRepository.Atualizar(System.Int32,czbooks.Domains.Livro)">
+            <summary>
+            busca um livro para atualiza-lo
+            </summary>
+            <param name="id"> id do livro que terá atualização </param>
+            <param name="livroAtualizado"> objeto que trará a atualização </param>
+        </member>
+        <member name="M:czbooks.Repositories.LivroRepository.Cadastrar(czbooks.Domains.Livro)">
+            <summary>
+            cadastra um novo livro
+            </summary>
+            <param name="novoLivro"> será o novo livro cadastrado </param>
+        </member>
+        <member name="M:czbooks.Repositories.LivroRepository.Listar">
+            <summary>
+            lista todos os livros sem exceção
+            </summary>
+            <returns> uma lista com todos os livros </returns>
+        </member>
+        <member name="T:czbooks.ViewModels.LoginViewModel">
+            <summary>
+            classe responsável pelo método de Login
+            </summary>
+        </member>
+    </members>
+</doc>
