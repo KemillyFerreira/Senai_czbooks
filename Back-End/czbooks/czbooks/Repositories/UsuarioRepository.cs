@@ -1,7 +1,6 @@
 ﻿using czbooks.Contexts;
 using czbooks.Domains;
 using czbooks.Interfaces;
-using System;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -11,15 +10,19 @@ namespace czbooks.Repositories
     {
         czbooksContext ctx = new czbooksContext();
 
+        //cadastra e salva um novo usuário
         public void Cadastrar(Usuario novoUsuario)
         {
-            throw new NotImplementedException();
+            ctx.Usuarios.Add(novoUsuario);
+            ctx.SaveChanges();
         }
 
+        //lista todos os usuários existentes
         public List<Usuario> Listar()
         {
-            throw new NotImplementedException();
+            return ctx.Usuarios.ToList();
         }
+
 
         public Usuario Login(string email, string senha)
         {

@@ -1,13 +1,12 @@
 ﻿using czbooks.Contexts;
 using czbooks.Domains;
 using czbooks.Interfaces;
-using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace czbooks.Repositories
 {
     public class AutoreRepository : IAutoreRepository
-
     {
         czbooksContext ctx = new czbooksContext();
 
@@ -18,12 +17,13 @@ namespace czbooks.Repositories
 
         public void Cadastrar(Autore novoAutor)
         {
-            throw new NotImplementedException();
+            ctx.Autores.Add(novoAutor);
+            ctx.SaveChanges();
         }
 
         public List<Autore> Listar()
         {
-            throw new NotImplementedException();
+            return ctx.Autores.ToList();
         }
     }
 }

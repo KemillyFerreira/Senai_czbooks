@@ -1,12 +1,16 @@
-﻿using czbooks.Domains;
+﻿using czbooks.Contexts;
+using czbooks.Domains;
 using czbooks.Interfaces;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace czbooks.Repositories
 {
     public class BibliotecaRepository : IBibliotecaRepository
     {
+        czbooksContext ctx = new czbooksContext();
+
         public void Atualizar(int id, Biblioteca bibliotecaAtualizada)
         {
             throw new NotImplementedException();
@@ -14,12 +18,13 @@ namespace czbooks.Repositories
 
         public void Cadastrar(Biblioteca novaBiblioteca)
         {
-            throw new NotImplementedException();
+            ctx.Bibliotecas.Add(novaBiblioteca);
+            ctx.SaveChanges();
         }
 
         public List<Biblioteca> Listar()
         {
-            throw new NotImplementedException();
+            return ctx.Bibliotecas.ToList();
         }
     }
 }

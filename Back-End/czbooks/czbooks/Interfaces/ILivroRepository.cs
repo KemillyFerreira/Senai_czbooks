@@ -6,7 +6,7 @@ namespace czbooks.Interfaces
     interface ILivroRepository
     {
         /// <summary>
-        /// lita todos os livros
+        /// lista todos os livros
         /// </summary>
         /// <returns> uma lista de livros</returns>
         List<Livro> Listar();

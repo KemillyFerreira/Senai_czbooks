@@ -2,7 +2,6 @@
 using czbooks.Domains;
 using czbooks.Interfaces;
 using Microsoft.EntityFrameworkCore;
-using System;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -74,16 +73,21 @@ namespace czbooks.Repositories
                 .ToList();
         }
 
-
+        /// <summary>
+        /// lista apenas o livro de determinado usuário
+        /// </summary>
+        /// <param name="idUsuario"> id do usuário que terá seus livros listados</param>
+        /// <returns> uma lista especifíca de livros</returns>
         public List<Livro> ListarMyBooks(int idUsuario)
         {
             return ctx.Livros
+                //junta com a tabela Autor para poder chegar as suas informações
                 .Include(b => b.IdAutorNavigation)
-                
 
+                //traz a tabela Usuario para poder chegar as suas informações
                 .Include(b => b.IdAutorNavigation.IdUsuarioNavigation)
 
-
+                //diz onde precisará ser feita a comparação para poder trazer determinado livro
                 .Where(b => b.IdAutorNavigation.IdUsuarioNavigation.IdUsuario == idUsuario)
 
                 .ToList();

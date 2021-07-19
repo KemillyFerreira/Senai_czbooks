@@ -4,6 +4,22 @@
         <name>czbooks</name>
     </assembly>
     <members>
+        <member name="P:czbooks.Controllers.LivrosController._livroRepository">
+            <summary>
+            o objeto _livroRepository irá receber todos os métodos definidos na interface
+            </summary>
+        </member>
+        <member name="M:czbooks.Controllers.LivrosController.#ctor">
+            <summary>
+            instancia o objeto _livroRepository para que haja referência aos métodos no repositório
+            </summary>
+        </member>
+        <member name="M:czbooks.Controllers.LivrosController.Listar">
+            <summary>
+            lista todos os livros
+            </summary>
+            <returns> uma lista de eventos e um satus code 200-OK </returns>
+        </member>
         <member name="M:czbooks.Interfaces.IAutoreRepository.Listar">
             <summary>
             lista toos os autores
@@ -63,7 +79,7 @@
         </member>
         <member name="M:czbooks.Interfaces.ILivroRepository.Listar">
             <summary>
-            lita todos os livros
+            lista todos os livros
             </summary>
             <returns> uma lista de livros</returns>
         </member>
@@ -125,6 +141,13 @@
             lista todos os livros sem exceção
             </summary>
             <returns> uma lista com todos os livros </returns>
+        </member>
+        <member name="M:czbooks.Repositories.LivroRepository.ListarMyBooks(System.Int32)">
+            <summary>
+            lista apenas o livro de determinado usuário
+            </summary>
+            <param name="idUsuario"> id do usuário que terá seus livros listados</param>
+            <returns> uma lista especifíca de livros</returns>
         </member>
         <member name="T:czbooks.ViewModels.LoginViewModel">
             <summary>
