@@ -1,6 +1,8 @@
 --DQL -> gera as consultas das informações
 
+-- determinando qual banco de dados usar
 USE senai_czbooks
+
 
 SELECT * FROM tiposUsuarios
 

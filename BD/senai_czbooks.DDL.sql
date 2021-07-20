@@ -8,6 +8,7 @@ GO
 USE senai_czbooks
 GO
 
+
 -- criando a tabela com nome tiposUsuarios
 CREATE TABLE tiposUsuarios
 (

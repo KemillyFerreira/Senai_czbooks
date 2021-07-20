@@ -1,7 +1,9 @@
 --DML -> inserção de dados nas tabelas
 
+-- determinando qual banco de dados usar
 USE senai_czbooks
 GO
+
 
 --insere os tipos de  usuários
 INSERT INTO		tiposUsuarios(nomeTipoUsuario)
@@ -43,6 +45,7 @@ VALUES			(1, 2, 1, 'Assim falou Zaratustra', 'O livro conta a história de um pen
 				,(3, 4, 1, 'Mitologia Nórdica','Odin, o mais alto dos altos, sábios, ousados ??e astutos; Thor, filho de Odin, incrivelmente forte, mas não o mais sábio dos deuses; E Loki-filho de um irmão de sangue gigante para Odin e um malandro e insuperável manipulador.', '13/03/2017', 49.50)
 				,(2, 5, 1,'O senhor dos anéis', 'Conflito contra o mal que se alastra pela Terra-média, através da luta de várias raças - Humanos, Anãos, Elfos, Ents e Hobbits', '29/07/1954', 109.15);
 GO
+
 
 UPDATE livros
 SET sinopse = 'Odin, o mais alto dos altos, sábios, ousados e astutos; Thor, filho de Odin, incrivelmente forte, mas não o mais sábio dos deuses; E Loki-filho de um irmão de sangue gigante para Odin e um malandro e insuperável manipulador.'
