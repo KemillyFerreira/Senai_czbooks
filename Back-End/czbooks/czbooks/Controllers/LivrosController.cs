@@ -1,8 +1,11 @@
-﻿using czbooks.Interfaces;
+﻿using czbooks.Domains;
+using czbooks.Interfaces;
 using czbooks.Repositories;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System;
-
+using System.IdentityModel.Tokens.Jwt;
+using System.Linq;
 
 namespace czbooks.Controllers
 {
@@ -33,6 +36,7 @@ namespace czbooks.Controllers
             _livroRepository = new LivroRepository();
         }
 
+       
         /// <summary>
         /// lista todos os livros
         /// </summary>
@@ -48,6 +52,52 @@ namespace czbooks.Controllers
             catch (Exception ex)
             {
                 return BadRequest(ex);
+            }
+        }
+
+        // apenas quem é adm -> [Authorize(Roles = "1")
+
+        /// <summary>
+        /// cadastra um novo livro
+        /// </summary>
+        /// <param name="novoLivro"> novo objeto que será cadastrado </param>
+        /// <returns> um novo livro</returns>
+        [HttpPost]
+        public IActionResult Post(Livro novoLivro)
+        {
+            try
+            {
+                _livroRepository.Cadastrar(novoLivro);
+                return StatusCode(201);
+            }
+            catch(Exception ex)
+            {
+                return BadRequest(ex);
+            }
+        }
+
+        /// <summary>
+        /// lista apenas livros especificos 
+        /// </summary>
+        /// <returns> retorna apenas livros de um determinado autor</returns>
+        [Authorize(Roles = "2")]
+        [HttpGet ("mine")]
+        public IActionResult Getmine()
+        {
+            try
+            {
+                int idUsuario = Convert.ToInt32(HttpContext.User.Claims.First(b => b.Type == JwtRegisteredClaimNames.Jti).Value);
+
+                return Ok(_livroRepository.ListarMyBooks(idUsuario)); 
+            }
+
+            catch (Exception error)
+            {
+                return BadRequest(new
+                {
+                    mensagem = "Não é possível mostrar os livros se o usuário não estiver logado!",
+                    error
+                });
             }
         }
     }

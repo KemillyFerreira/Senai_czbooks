@@ -15,6 +15,7 @@ namespace czbooks.Domains
         public int IdTipoUsuario { get; set; }
         public string NomeTipoUsuario { get; set; }
 
+
         public virtual ICollection<Usuario> Usuarios { get; set; }
     }
 }

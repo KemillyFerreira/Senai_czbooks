@@ -4,6 +4,19 @@
         <name>czbooks</name>
     </assembly>
     <members>
+        <member name="M:czbooks.Controllers.BibliotecasController.Get">
+            <summary>
+            lista todas as bibliotecas existentes
+            </summary>
+            <returns> uma lista de bibliotecas </returns>
+        </member>
+        <member name="M:czbooks.Controllers.BibliotecasController.Post(czbooks.Domains.Biblioteca)">
+            <summary>
+            cadastra uma nova biblioteca
+            </summary>
+            <param name="novaBiblioteca"> biblioteca com as novas informações </param>
+            <returns> uma nova biblioteca </returns>
+        </member>
         <member name="P:czbooks.Controllers.LivrosController._livroRepository">
             <summary>
             o objeto _livroRepository irá receber todos os métodos definidos na interface
@@ -19,6 +32,44 @@
             lista todos os livros
             </summary>
             <returns> uma lista de eventos e um satus code 200-OK </returns>
+        </member>
+        <member name="M:czbooks.Controllers.LivrosController.Post(czbooks.Domains.Livro)">
+            <summary>
+            cadastra um novo livro
+            </summary>
+            <param name="novoLivro"> novo objeto que será cadastrado </param>
+            <returns> um novo livro</returns>
+        </member>
+        <member name="M:czbooks.Controllers.LivrosController.Getmine">
+            <summary>
+            lista apenas livros especificos 
+            </summary>
+            <returns> retorna apenas livros de um determinado autor</returns>
+        </member>
+        <member name="M:czbooks.Controllers.LoginController.Post(czbooks.ViewModels.LoginViewModel)">
+            <summary>
+            realiza o login de um usuário
+            </summary>
+            <param name="login"> método para autenticar o usuário </param>
+            <returns> login que deu certo ou uma mensagem de erro </returns>
+        </member>
+        <member name="P:czbooks.Controllers.UsuarioController._usuarioRepository">
+            <summary>
+            Objeto _usuarioRepository que irá receber todos os métodos definidos na interface IuUsuarioRepository
+            </summary>
+        </member>
+        <member name="M:czbooks.Controllers.UsuarioController.Get">
+            <summary>
+            lista todos os usuarios
+            </summary>
+            <returns> uma lista de usuários </returns>
+        </member>
+        <member name="M:czbooks.Controllers.UsuarioController.Post(czbooks.Domains.Usuario)">
+            <summary>
+            cadastra um novo usuário
+            </summary>
+            <param name="novoUsuario"> será o objeto com as novas informações </param>
+            <returns> um novo usuário </returns>
         </member>
         <member name="M:czbooks.Interfaces.IAutoreRepository.Listar">
             <summary>

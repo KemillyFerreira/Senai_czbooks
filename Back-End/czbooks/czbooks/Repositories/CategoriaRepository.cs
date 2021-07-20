@@ -21,7 +21,6 @@ namespace czbooks.Repositories
             ctx.Categorias.Add(novaCategoria);
             ctx.SaveChanges();
         }
-
         
         public List<Categoria> Listar()
         {

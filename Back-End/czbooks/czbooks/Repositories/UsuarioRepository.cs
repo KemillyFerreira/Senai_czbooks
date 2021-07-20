@@ -23,7 +23,6 @@ namespace czbooks.Repositories
             return ctx.Usuarios.ToList();
         }
 
-
         public Usuario Login(string email, string senha)
         {
             //FirstOrDefault => comparativo, se email e senha estiverem corretos OK, se apenas um estiver errado, não da certo

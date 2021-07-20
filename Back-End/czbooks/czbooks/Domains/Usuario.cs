@@ -2,7 +2,6 @@
 using System.ComponentModel.DataAnnotations;
 
 #nullable disable
-
 namespace czbooks.Domains
 {
     public partial class Usuario

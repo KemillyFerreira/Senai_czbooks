@@ -57,6 +57,7 @@ namespace czbooks
                 c.IncludeXmlComments(xmlPath);
             });
 
+
             services
                 // Define a forma de autenticação
                 .AddAuthentication(options =>

@@ -12,7 +12,6 @@ namespace czbooks.Repositories
 
         public void Atualizar(int id, Autore autorAtualizado)
         {
-            
         }
 
         public void Cadastrar(Autore novoAutor)

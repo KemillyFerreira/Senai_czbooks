@@ -13,13 +13,11 @@ namespace czbooks.Interfaces
         /// <returns></returns>
         Usuario Login(string email, string senha);
 
-
         /// <summary>
         /// lista todos os usuários
         /// </summary>
         /// <returns> retorna uma lista de usuarios </returns>
         List<Usuario> Listar();
-
 
         /// <summary>
         /// cadastra um novo usuario

@@ -12,9 +12,7 @@ namespace czbooks.Repositories
         czbooksContext ctx = new czbooksContext();
 
         public void Atualizar(int id, Biblioteca bibliotecaAtualizada)
-        {
-            throw new NotImplementedException();
-        }
+        {  throw new NotImplementedException(); }
 
         public void Cadastrar(Biblioteca novaBiblioteca)
         {

@@ -1,0 +1,75 @@
+{
+	"info": {
+		"_postman_id": "512bb801-95f2-4128-b021-c907c239c020",
+		"name": "CzBooks",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Biblioteca",
+			"item": [
+				{
+					"name": "biblioteca.Listar",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/Bibliotecas",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"Bibliotecas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "biblioteca.Cadastrar",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"NomeFantasia\"  :   \"czbooks2\",\r\n    \"Endereco\"      :   \"Rua Oduvaldo Viana\",\r\n    \"Cnpj\"          :   \"1234567891012\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/Bibliotecas",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"Bibliotecas"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Livros",
+			"item": []
+		},
+		{
+			"name": "Usuario",
+			"item": []
+		},
+		{
+			"name": "Login",
+			"item": []
+		}
+	]
+}

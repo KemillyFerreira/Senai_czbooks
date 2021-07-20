@@ -16,6 +16,7 @@ namespace czbooks.Domains
         public DateTime DataDePublicacao { get; set; }
         public decimal Preco { get; set; }
 
+
         public virtual Autore IdAutorNavigation { get; set; }
         public virtual Biblioteca IdBibliotecaNavigation { get; set; }
         public virtual Categoria IdCategoriaNavigation { get; set; }

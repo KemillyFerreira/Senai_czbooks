@@ -23,6 +23,5 @@ namespace czbooks.Interfaces
         /// <param name="id"> id do autor que será atualizado </param>
         /// <param name="autorAtualizado"> autor com o novo nome </param>
         void Atualizar(int id, Autore autorAtualizado);
-
     }
 }

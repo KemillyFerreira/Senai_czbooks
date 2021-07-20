@@ -17,6 +17,7 @@ namespace czbooks.Domains
         public string Endereco { get; set; }
         public string Cnpj { get; set; }
 
+
         public virtual ICollection<Livro> Livros { get; set; }
     }
 }

@@ -23,7 +23,5 @@ namespace czbooks.Interfaces
         /// <param name="id"> busca o id que terá a atualização</param>
         /// <param name="bibliotecaAtualizada"> biblioteca com o novo nome </param>
         void Atualizar( int id, Biblioteca bibliotecaAtualizada);
-
-
     }
 }

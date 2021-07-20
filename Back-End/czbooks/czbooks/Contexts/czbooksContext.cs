@@ -9,8 +9,8 @@ namespace czbooks.Contexts
     {
         public czbooksContext()
         {
-        }
 
+        }
         public czbooksContext(DbContextOptions<czbooksContext> options)
             : base(options)
         {

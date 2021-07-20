@@ -39,10 +39,10 @@ namespace czbooks.Repositories
                 livroBuscado.IdBiblioteca = livroAtualizado.IdCategoria;
             }
 
-            //atualiza as informações
+            // atualiza as informações
             ctx.Livros.Update(livroBuscado);
 
-            //salva as novas informações inseridas
+            // salva as novas informações inseridas
             ctx.SaveChanges();
         }
 

@@ -15,6 +15,7 @@ namespace czbooks.Domains
         public int IdCategoria { get; set; }
         public string NomeCategoria { get; set; }
 
+
         public virtual ICollection<Livro> Livros { get; set; }
     }
 }

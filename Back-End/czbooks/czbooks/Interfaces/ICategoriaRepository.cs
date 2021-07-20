@@ -23,6 +23,5 @@ namespace czbooks.Interfaces
         /// <param name="id"> busca o id que terá a atualização </param>
         /// <param name="categoriaAtualizada"> categoria com a nova atualização </param>
         void Atualizar(int id, Categoria categoriaAtualizada);
-
     }
 }
