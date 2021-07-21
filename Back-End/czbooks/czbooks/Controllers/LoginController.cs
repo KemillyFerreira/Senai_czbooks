@@ -74,8 +74,8 @@ namespace czbooks.Controllers
 
                 // gera o token
                 var token = new JwtSecurityToken(
-                    issuer: "czbookd.webApi",                   // emissor do token
-                    audience: "czbookd.webApi",                 //destinatário do token
+                    issuer: "czbooks.webApi",                   // emissor do token
+                    audience: "czbooks.webApi",                 //destinatário do token
                     claims: claims,                             //dados definidos acima
                     expires: DateTime.Now.AddMinutes(30),       // tempo de expiração
                     signingCredentials: creds                   // credenciais do token

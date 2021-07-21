@@ -36,11 +36,12 @@ namespace czbooks.Controllers
             _livroRepository = new LivroRepository();
         }
 
-       
+
         /// <summary>
         /// lista todos os livros
         /// </summary>
         /// <returns> uma lista de eventos e um satus code 200-OK </returns>
+        [Authorize(Roles = "1, 2")]
         [HttpGet]
         public IActionResult Listar()
         {

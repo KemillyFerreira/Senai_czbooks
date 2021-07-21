@@ -7,6 +7,8 @@ using System;
 
 namespace czbooks.Controllers
 {
+    //controller responsável pelos endpoints (URL) referente ao Usuario
+
     // Define que o tipo de resposta da API será no formato JSON
     [Produces("application/json")]
 
@@ -33,6 +35,7 @@ namespace czbooks.Controllers
         /// lista todos os usuarios
         /// </summary>
         /// <returns> uma lista de usuários </returns>
+        [Authorize(Roles = "1")]
         [HttpGet]
         public IActionResult Get()
         {
@@ -45,6 +48,7 @@ namespace czbooks.Controllers
         /// </summary>
         /// <param name="novoUsuario"> será o objeto com as novas informações </param>
         /// <returns> um novo usuário </returns>
+        [Authorize(Roles = "1")]
         [HttpPost]
         public IActionResult Post(Usuario novoUsuario)
         {

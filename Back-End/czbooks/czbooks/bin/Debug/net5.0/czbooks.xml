@@ -17,6 +17,19 @@
             <param name="novaBiblioteca"> biblioteca com as novas informações </param>
             <returns> uma nova biblioteca </returns>
         </member>
+        <member name="M:czbooks.Controllers.CategoriasController.Get">
+            <summary>
+            lista todas as categorias que já existem
+            </summary>
+            <returns> uma lista de categorias</returns>
+        </member>
+        <member name="M:czbooks.Controllers.CategoriasController.Post(czbooks.Domains.Categoria)">
+            <summary>
+            cadastra uma nova categoria
+            </summary>
+            <param name="novaCategoria"> será o objeto com a nova informação </param>
+            <returns> uma nova categoria de livros </returns>
+        </member>
         <member name="P:czbooks.Controllers.LivrosController._livroRepository">
             <summary>
             o objeto _livroRepository irá receber todos os métodos definidos na interface
@@ -55,7 +68,7 @@
         </member>
         <member name="P:czbooks.Controllers.UsuarioController._usuarioRepository">
             <summary>
-            Objeto _usuarioRepository que irá receber todos os métodos definidos na interface IuUsuarioRepository
+            Objeto _usuarioRepository que irá receber todos os métodos definidos na interface IUsuarioRepository
             </summary>
         </member>
         <member name="M:czbooks.Controllers.UsuarioController.Get">
